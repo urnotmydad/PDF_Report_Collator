@@ -1,0 +1,20 @@
+{
+  "name": "hubspot-pdf-merge",
+  "version": "1.0.0",
+  "description": "Pulls in PDF urls from Hubspot contact params, downloads the PDFs, merges them, and saves a new PDF to OneDrive",
+  "main": "app.js",
+  "scripts": {
+    "test": "console.log(\"Hello World\");"
+  },
+  "keywords": [
+    "pdf",
+    "merge",
+    "hubspot"
+  ],
+  "author": "Dan Dwire",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "pdf-lib": "^1.17.1"
+  }
+}
