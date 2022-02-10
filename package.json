@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Pulls in PDF urls from Hubspot contact params, downloads the PDFs, merges them, and saves a new PDF to OneDrive",
   "main": "app.js",
-  "scripts": {
-    "test": "console.log(\"Hello World\");"
-  },
   "keywords": [
     "pdf",
     "merge",

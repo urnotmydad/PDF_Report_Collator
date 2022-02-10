@@ -4,8 +4,8 @@ const fs = require('fs');
 
 async function generatePDF() {
     // Load cover and content pdfs
-    const cover = await PDFDocument.load(fs.readFileSync('./pdf1.pdf'));
-    const content = await PDFDocument.load(fs.readFileSync('./pdf2.pdf'));
+    const cover = await PDFDocument.load(fs.readFileSync('./source-pdfs/pdf1.pdf'));
+    const content = await PDFDocument.load(fs.readFileSync('./source-pdfs/pdf2.pdf'));
   
     // Create a new document
     const doc = await PDFDocument.create();
@@ -65,7 +65,7 @@ justo quis condimentum vestibulum, nunc eros congue dolor, eu pellentesque turpi
     }
   
     // Write the PDF to a file
-    fs.writeFileSync('./test.pdf', await doc.save());
+    fs.writeFileSync('./output-pdfs/test.pdf', await doc.save());
   }
 
 var app = express();
